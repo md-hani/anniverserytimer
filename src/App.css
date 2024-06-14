@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #3C3D3F;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: relative;
+}
+
+main {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+}
+
+.add-background {
+  background-image: url("kissPic.png");
+  background-size: 100px;
+}
+
+.visible {
+  visibility: visible !important;
+}
+
+.myText {
+  font-size: xxx-large;
+  font-weight: 700;
   color: white;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50px;
+  visibility: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  width: 80%;
+  height: 150px;
+  background-color: transparent;
+  margin: auto;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.separators {
+  display: flex;
+  flex-direction: column;
+}
+
+.separator1{
+  flex: 1;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 25px 0;
+}
+
+.separator2{
+  flex: 1;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 25px 0;
+}
+
+.clock-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+  margin: 5px;
+  background-color: white;
+  border-radius: 20%;
+  border: 1px solid white;
+  -webkit-border-radius: 20%;
+  -moz-border-radius: 20%;
+  -ms-border-radius: 20%;
+  -o-border-radius: 20%;
+  > p {
+    margin: auto;
+    font-size: xxx-large;
+    font-weight: 700;
   }
 }
